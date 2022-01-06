@@ -1,0 +1,25 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: test-based-on-base
+  annotations:
+    blueprints.cloud.google.com/title: 'test-based-on-base'
+    cft.dev/base-version: '1'
+    cft.dev/package-version: '1'
+upstream:
+  type: git
+  git:
+    repo: https://github.com/adamdoes/gdc-cluster-blueprints
+    directory: /base-cluster
+    ref: main
+  updateStrategy: resource-merge
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/adamdoes/gdc-cluster-blueprints
+    directory: /base-cluster
+    ref: main
+    commit: ceccf1e14f734fd7465f2f45e56860104fa8b2af
+info:
+  description: test-based-on-base
+pipeline: {}
