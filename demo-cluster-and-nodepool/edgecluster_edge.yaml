@@ -7,7 +7,7 @@ spec:
   Authorization:
     Admin Users:
       Username: someone@example.com
-  Cluster Location: us-central1
+  Cluster Location: us-east1
   Networking:
     clusterIpv4CidrBlocks:
     - 10.96.0.0/17
