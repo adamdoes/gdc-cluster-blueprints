@@ -4,7 +4,7 @@ metadata:
   name: np1
   namespace: config-control
 spec:
-  Node Count: '3'
   Node Location: us-central1-edge-den8
   Node Pool Location: us-central1
   Parent Cluster: edge-1
+  Node Count: '2'
