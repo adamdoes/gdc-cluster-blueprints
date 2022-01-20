@@ -1,0 +1,25 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: test
+  annotations:
+    blueprints.cloud.google.com/title: 'test with spaces'
+    cft.dev/base-version: '1'
+    cft.dev/package-version: '1'
+upstream:
+  type: git
+  git:
+    repo: 'https://github.com/adamdoes/gdc-cluster-blueprints'
+    directory: /base-cluster
+    ref: main
+  updateStrategy: resource-merge
+upstreamLock:
+  type: git
+  git:
+    repo: 'https://github.com/adamdoes/gdc-cluster-blueprints'
+    directory: /base-cluster
+    ref: main
+    commit: 57b09e680e503f3fb12f18d14f7d4ab496ed56b4
+info:
+  description: test with spaces
+pipeline: {}
