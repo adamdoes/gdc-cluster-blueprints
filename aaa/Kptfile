@@ -9,14 +9,14 @@ metadata:
 upstream:
   type: git
   git:
-    repo: https://github.com/adamdoes/gdc-cluster-blueprints
+    repo: 'https://github.com/adamdoes/gdc-cluster-blueprints'
     directory: /base-cluster
     ref: main
   updateStrategy: resource-merge
 upstreamLock:
   type: git
   git:
-    repo: https://github.com/adamdoes/gdc-cluster-blueprints
+    repo: 'https://github.com/adamdoes/gdc-cluster-blueprints'
     directory: /base-cluster
     ref: main
     commit: a5186c11bf75b4a94c8653b01af58bd7fe30eba3
