@@ -1,0 +1,25 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: far-edge-site
+  annotations:
+    blueprints.cloud.google.com/title: 'Far Edge GDC Cluster'
+    cft.dev/base-version: '1'
+    cft.dev/package-version: '1'
+upstream:
+  type: git
+  git:
+    repo: https://github.com/adamdoes/gdc-cluster-blueprints
+    directory: /base-cluster
+    ref: main
+  updateStrategy: resource-merge
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/adamdoes/gdc-cluster-blueprints
+    directory: /base-cluster
+    ref: main
+    commit: 020b5d78c7d58b35a43db3587678a0ebff888686
+info:
+  description: Very small site.
+pipeline: {}
