@@ -3,3 +3,5 @@ kind: EdgeNodePool
 metadata:
   name: aa
   namespace: config-control
+spec:
+  nodeCount: 2
