@@ -3,6 +3,8 @@ kind: EdgeNodePool
 metadata:
   name: far-edge-site-np1
   namespace: config-control
+  labels:
+    site-type: far-edge
 spec:
   nodeCount: 1
   parentCluster: far-edge-site
