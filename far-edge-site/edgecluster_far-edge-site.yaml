@@ -5,3 +5,5 @@ metadata:
   namespace: config-control
   labels:
     site-type: far-edge
+  annotations:
+    dpdk-enabled: 'true'
