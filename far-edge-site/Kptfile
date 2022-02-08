@@ -5,7 +5,7 @@ metadata:
   annotations:
     blueprints.cloud.google.com/title: 'Far Edge GDC Cluster'
     cft.dev/base-version: '1'
-    cft.dev/package-version: '5'
+    cft.dev/package-version: '6'
 upstream:
   type: git
   git:
@@ -21,5 +21,5 @@ upstreamLock:
     ref: main
     commit: 020b5d78c7d58b35a43db3587678a0ebff888686
 info:
-  description: Very small site.
+  description: Very small site
 pipeline: {}
